@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App!</title>
+  <link rel="stylesheet" href="./notes.css">
+  <style>
+    * {
+      font-family: "poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="notes-container">
+    <div class="notes-top">
+      <div class="left-top">Notes</div>
+      <input class="mid-top" placeholder="Search...." type="text">
+      <button class="right-top">Logout</button>
+    </div>
+    <div class="notes-mid">
+      <h1>Hey, Jitesh!</h1>
+      <a class="create-new" href="http://localhost:3000/create">Create New Notes</a>
+    </div>
+    <div class="notes-bottom">
+      <% NotesData.forEach((element)=> { %>
+        <a href="http://localhost:3000/update" class="notes-content">
+          <div>
+            <%= element.title %>
+          </div>
+          <p>
+            <%= element.description %>
+          </p>
+        </a>
+        <% }) %>
+    </div>
+  </div>
+</body>
+
+</html>

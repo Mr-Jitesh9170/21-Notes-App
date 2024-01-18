@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --background: #FFC700;
+}
+
+.notes-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFC700;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* --------------top ------------- */
+.notes-top {
+  padding: 20px 40px;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-top {
+  font-size: 25px;
+  font-weight: 700;
+  color: #12296c;
+}
+
+.notes-top .mid-top {
+  width: 50%;
+  padding: 10px 12px;
+  border: none;
+  box-shadow: 0px 0px 3px rgb(244, 8, 8);
+  outline: none;
+  border-radius: 4px;
+}
+
+.right-top {
+  padding: 7px 10px;
+  border-radius: 12px;
+  border: 1px solid black;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+/* -------------- Mid ------------- */
+.notes-mid {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+}
+
+.create-new {
+  align-self: flex-end;
+  background-color: black;
+  font-weight: bold;
+  color: #fff;
+  font-size: 17px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+
+/* --------------bottom ------------- */
+.notes-bottom {
+  padding: 30px 0;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  height: 80%;
+  width: 100%;
+}
+
+.notes-content {
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 20%;
+  box-shadow: 0px 0px 3px rgb(244, 8, 8);
+  padding: 12px 16px;
+}
+
+.notes-content :nth-child(1) {
+  font-weight: bold;
+  margin: 5px 0;
+  color: black;
+}
+
+.notes-content :nth-child(2) {
+  color: black;
+}
+
+
+/* ================================ Create Notes */
+.create-notes-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-note-bottom {
+  height: 85%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-notes-top a {
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: bolder;
+  color: #12296c;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create-form input,
+textarea {
+  padding: 10px 14px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.add-button {
+  width: fit-content;
+  margin: 20px 0;
+  background-color: black;
+  font-weight: bold;
+  color: #fff;
+  font-size: 17px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+
+
+/* =============================== Update - Container */
+.update-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+}
